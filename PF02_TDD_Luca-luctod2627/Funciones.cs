@@ -20,7 +20,11 @@ namespace PF02_TDD_Luca_luctod2627
             }
             return resultado;
         }
-
-
+        public bool EsContrasenyaValida(string contrasenya)
+        {
+            return contrasenya != null
+                && contrasenya.Length >= 8
+                && contrasenya.Contains("#");
+        }
     }
 }
